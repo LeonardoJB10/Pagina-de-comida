@@ -37,15 +37,15 @@ function ComponenteEncabezado() {
   };
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: 'brown' }}>
+    <AppBar position="static" sx={{ backgroundColor: 'black' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          
           <Typography
             variant="h6"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            href="https://api.rawg.io/api/games?key=945c6e195ba6424ea4ebf914af2ca1b5&platforms=4&genres=4&search=batman"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -56,7 +56,7 @@ function ComponenteEncabezado() {
               fontWeight: 'bold',
             }}
           >
-            Jorge Bustos
+            🎮 GameVerse
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -93,12 +93,12 @@ function ComponenteEncabezado() {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+         
           <Typography
             variant="h5"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            href="https://api.rawg.io/api/games?key=945c6e195ba6424ea4ebf914af2ca1b5&platforms=4&genres=4&search=batman"
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
@@ -118,7 +118,7 @@ function ComponenteEncabezado() {
                Inicio
             </Button>
             <Button component={Link} to='/recetas' onClick={handleCloseNavMenu} sx={{my: 2, color: 'white', display: 'block', fontSize: '16px'}}>
-               Recetas
+               videojuegos
             </Button>
             <Button component={Link} to='/about' onClick={handleCloseNavMenu} sx={{my: 2, color: 'white', display: 'block' , fontSize: '16px'}}>
                Acerca De
@@ -132,7 +132,7 @@ function ComponenteEncabezado() {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="https://png.pngtree.com/png-clipart/20220628/original/pngtree-food-logo-png-image_8239825.png" />
+                <Avatar alt="Remy Sharp" src="https://www.liderlogo.es/wp-content/uploads/2022/10/de-donde-surge-el-logo-de-las-consolas-de-videojuegos-1024x566.webp" />
               </IconButton>
             </Tooltip>
             <Menu

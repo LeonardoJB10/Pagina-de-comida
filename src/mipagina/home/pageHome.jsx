@@ -6,9 +6,7 @@ const PageHome = () => {
   return (
     <div className="page-home">
       <div className="page-home-content">
-        <h1>Hola!! ven a conocer las mejores recetas del mundo</h1>
-        <p>Encuentra las mejores recetas de cada pais</p>
-        <p>Desde unos ricos panuchos🌮 de Merida hasta un delicioso sushi de Tokio🍣 </p>
+        <h1>Hola!! Gamer </h1>
         <Link to="/recetas">
           <button>Conocer más</button>
         </Link>
